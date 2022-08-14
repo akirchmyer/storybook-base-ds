@@ -7,9 +7,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"./src/**/*.+(js|ts|json)\"",
-    "lint": "eslint ./src --ext .ts",
-    "lint:fix": "eslint ./src --ext .ts --fix && npm run format",
+    "format": "prettier --write \"./src/**/*.+(js|ts|tsx|json)\"",
+    "lint": "eslint ./src --ext .ts --ext .tsx",
+    "lint:fix": "eslint ./src --ext .ts --ext .tsx --fix && npm run format",
     "test": "npm run lint && npm run unit",
     "unit": "jest",
     "storybook": "start-storybook -p 6006",
