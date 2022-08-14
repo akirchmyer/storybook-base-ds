@@ -11,7 +11,9 @@
     "lint": "eslint ./src --ext .ts",
     "lint:fix": "eslint ./src --ext .ts --fix && npm run format",
     "test": "npm run lint && npm run unit",
-    "unit": "jest"
+    "unit": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "main": "dist/index.js",
   "author": "Andrew Kirchmyer",
@@ -27,10 +29,21 @@
   },
   "homepage": "https://github.com/akirchmyer/npm-base",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.7.3",
+    "@types/react": "^18.0.17",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "jest": "^28.1.3",
@@ -41,5 +54,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/akirchmyer/npm-base.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
