@@ -1,7 +1,7 @@
 {
-  "name": "npm-base",
-  "version": "1.0.11",
-  "description": "Npm package template for building & publishing w/ TypeScript, eslint, jest, CircleCi npm registry deployment",
+  "name": "storybook-base-ds",
+  "version": "1.0.0",
+  "description": "Base template for a package that creates design systems using storybook, React TypeScript primitives & composites, sass and npm",
   "files": [
     "dist"
   ],
@@ -19,15 +19,17 @@
   "author": "Andrew Kirchmyer",
   "license": "MIT",
   "keywords": [
-    "npm",
-    "TypeScript",
-    "eslint",
-    "jest"
+    "storybook",
+    "Design System",
+    "sass",
+    "grid",
+    "primitives",
+    "composites"
   ],
   "bugs": {
-    "url": "https://github.com/akirchmyer/npm-base/issues"
+    "url": "https://github.com/akirchmyer/storybook-base-ds/issues"
   },
-  "homepage": "https://github.com/akirchmyer/npm-base",
+  "homepage": "https://github.com/akirchmyer/storybook-base-ds",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@storybook/addon-actions": "^6.5.10",
@@ -53,7 +55,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akirchmyer/npm-base.git"
+    "url": "https://github.com/akirchmyer/storybook-base-ds.git"
   },
   "dependencies": {
     "react": "^18.2.0",
